@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff, #e2e2e2);
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.5;
+    background-color: black;
+}
+
+.bhoot {
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.bhoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bhoot i {
+    margin-left: 15px;
+    font-size: 27px;
+    color: white;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.searchBox input {
+    width: 500px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+}
+
+.searchBox button {
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.searchBox button:hover {
+    background: beige;
+    transform: scale(1.1);
+}
+
+.searchBox button:active {
+    transform: scale(0.95);
+}
+
+.searchBox button i {
+    font-size: 1.2rem;
+}
+
+.tres {
+    padding-top: 20px;
+    background-color: #333;
+    height: 221px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.image-gallery img {
+    width: 311px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .searchBox {
+        flex-direction: row;
+    }
+
+    .searchBox input {
+        width: 250px;
+    }
+
+    .image-gallery img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .searchBox input {
+        width: 200px;
+        padding: 8px 10px;
+    }
+
+    .searchBox button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .image-gallery img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .searchBox input {
+        width: 180px;
+    }
+
+    .image-gallery img {
+        width: 100px;
+        height: 100px;
+    }
+}
